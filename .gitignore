@@ -289,3 +289,20 @@ http-client.private.env.json
 # Apifox Helper cache
 .idea/.cache/.Apifox_Helper
 .idea/ApifoxUploaderProjectSetting.xml
+
+# 忽略 JetBrains IDEs 的其他配置文件
+.idea/*
+# 应该被管理的配置文件
+# .idea/.gitignore
+# 混合级的项目设置，例如使用的解释器类型
+!.idea/misc.xml
+# 项目模块结构
+!.idea/modules.xml
+# 项目模块文件
+!.idea/opencv4-learn.iml
+# 版本管理系统配置信息
+!.idea/vcs.xml
+## Ruff 配置文件
+# .idea/ruff.xml
+# 代码检查配置
+!.idea/inspectionProfiles/
