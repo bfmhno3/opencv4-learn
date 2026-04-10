@@ -1,8 +1,11 @@
+from pathlib import Path
+
 import cv2 as cv
 
 
+ROOT_DIR = Path(__file__).resolve().parents[2]
 def main() -> None:
-    img: cv.Mat = cv.imread("resources/photos/park.jpg")
+    img: cv.Mat = cv.imread(str(ROOT_DIR / "resources" / "photos" / "park.jpg"))
     average: cv.Mat = cv.blur(img, (3, 3))
     gaussian: cv.Mat = cv.GaussianBlur(img, (3, 3), 0)
     median: cv.Mat = cv.medianBlur(img, 3)
