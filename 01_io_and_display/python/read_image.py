@@ -1,8 +1,10 @@
 import cv2 as cv
 import os
+from pathlib import Path
 from typing import List
 
 
+ROOT_DIR = Path(__file__).resolve().parents[2]
 def get_image_path(dir_path: str) -> List[str]:
     return [
         image_path
@@ -14,7 +16,7 @@ def get_image_path(dir_path: str) -> List[str]:
 
 
 def main() -> None:
-    image_paths: List[str] = get_image_path("resources/photos")
+    image_paths: List[str] = get_image_path(str(ROOT_DIR / "resources" / "photos"))
 
     for image_path in image_paths:
         img: cv.Mat = cv.imread(image_path)
