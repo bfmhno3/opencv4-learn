@@ -13,9 +13,10 @@
 
 ## C++ 实验
 
-- 掩码与位操作
-- 基础阈值化
-- 基于阈值或边缘的轮廓提取
+- `cpp/image_masking.cpp`（你来实现）
+- `cpp/bitwise_operation.cpp`（你来实现）
+- `cpp/thresholding_demo.cpp`（你来实现）
+- `cpp/contour_detection.cpp`（你来实现）
 
 ## 文档
 
