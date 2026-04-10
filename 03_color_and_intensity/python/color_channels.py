@@ -1,9 +1,12 @@
+from pathlib import Path
+
 import cv2 as cv
 import numpy as np
 
 
+ROOT_DIR = Path(__file__).resolve().parents[2]
 def main() -> None:
-    img: cv.Mat = cv.imread("resources/photos/park.jpg")
+    img: cv.Mat = cv.imread(str(ROOT_DIR / "resources" / "photos" / "park.jpg"))
     blank_channel = np.zeros(img.shape[:2], dtype="uint8")
     blue_channel, green_channel, red_channel = cv.split(img)
 
