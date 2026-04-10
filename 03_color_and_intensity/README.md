@@ -11,6 +11,13 @@
 - `python/color_channels.py`
 - `python/image_histogram.py`
 
+## C++ 实验
+
+- `cpp/convert_to_grayscale.cpp`（你来实现）
+- `cpp/color_space.cpp`（你来实现）
+- `cpp/color_channels.cpp`（你来实现）
+- `cpp/image_histogram.cpp`（你来实现）
+
 ## 文档
 
 - `experiment_grayscale_and_channels.md`
