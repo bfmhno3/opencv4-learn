@@ -1,9 +1,12 @@
+from pathlib import Path
+
 import cv2 as cv
 import numpy as np
 
 
+ROOT_DIR = Path(__file__).resolve().parents[2]
 def main() -> None:
-    img: cv.Mat = cv.imread("resources/photos/cat.jpg")
+    img: cv.Mat = cv.imread(str(ROOT_DIR / "resources" / "photos" / "cat.jpg"))
     gray_img: cv.Mat = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
     blurred: cv.Mat = cv.GaussianBlur(gray_img, (3, 3), cv.BORDER_DEFAULT)
     canny_img: cv.Mat = cv.Canny(blurred, 125, 175)
