@@ -1,9 +1,12 @@
+from pathlib import Path
+
 import cv2 as cv
 import numpy as np
 
 
+ROOT_DIR = Path(__file__).resolve().parents[2]
 def main() -> None:
-    img: cv.Mat = cv.imread("resources/photos/cats.jpg")
+    img: cv.Mat = cv.imread(str(ROOT_DIR / "resources" / "photos" / "cats.jpg"))
     blank: np.ndarray = np.zeros(img.shape, dtype=np.uint8)
     rectangle: cv.Mat = cv.rectangle(blank, (30, 30), (370, 370), (0, 255, 255), thickness=cv.FILLED)
 
