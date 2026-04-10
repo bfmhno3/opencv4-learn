@@ -9,7 +9,7 @@
 - `python/image_masking.py`
 - `python/bitwise_operation.py`
 - `python/contour_detection.py`
-- `python/thresholding_demo.py`（待补充）
+- `python/thresholding_demo.py`
 
 ## C++ 实验
 
