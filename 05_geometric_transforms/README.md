@@ -11,6 +11,13 @@
 - `python/rotate_image.py`
 - `python/flip_image.py`
 
+## C++ 实验
+
+- `cpp/resize_image.cpp`（你来实现）
+- `cpp/translate_image.cpp`（你来实现）
+- `cpp/rotate_image.cpp`（你来实现）
+- `cpp/flip_image.cpp`（你来实现）
+
 ## 文档
 
 - `experiment_resize_and_interpolation.md`
