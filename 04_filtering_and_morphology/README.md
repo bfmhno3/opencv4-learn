@@ -12,6 +12,14 @@
 - `python/dilation.py`
 - `python/erosion.py`
 
+## C++ 实验
+
+- `cpp/gaussian_blur.cpp`（你来实现）
+- `cpp/blurring.cpp`（你来实现）
+- `cpp/canny_edge_detector.cpp`（你来实现）
+- `cpp/dilation.cpp`（你来实现）
+- `cpp/erosion.cpp`（你来实现）
+
 ## 文档
 
 - `experiment_blur_and_noise.md`
