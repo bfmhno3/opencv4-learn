@@ -1,7 +1,13 @@
+from pathlib import Path
+from typing import Tuple
+
 import cv2 as cv
 
 
-def rotate(img: cv.Mat, angle: float, rotation_point: tuple[int] = None) -> cv.Mat:
+ROOT_DIR = Path(__file__).resolve().parents[2]
+
+
+def rotate(img: cv.Mat, angle: float, rotation_point: Tuple[int, int] | None = None) -> cv.Mat:
     height, width = img.shape[:2]
 
     if rotation_point is None:
@@ -14,7 +20,11 @@ def rotate(img: cv.Mat, angle: float, rotation_point: tuple[int] = None) -> cv.M
 
 
 def main() -> None:
-    img: cv.Mat = cv.imread("resources/photos/cat.jpg")
+    img_path = ROOT_DIR / "resources" / "photos" / "cat.jpg"
+    img: cv.Mat | None = cv.imread(str(img_path))
+    if img is None:
+        raise FileNotFoundError(f"Failed to load image: {img_path}")
+
     rotated_img: cv.Mat = rotate(img, 30)
 
     cv.imshow("Original", img)
