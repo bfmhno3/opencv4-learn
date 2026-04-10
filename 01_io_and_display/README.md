@@ -19,7 +19,9 @@
 
 ## C++ 实验
 
-本阶段会提供与 Python 对应的基础 C++ 示例。
+- `cpp/read_image.cpp`（你来实现）
+- `cpp/read_videos.cpp`（你来实现）
+- `cpp/rescale_video.cpp`（你来实现）
 
 ## 文档
 
