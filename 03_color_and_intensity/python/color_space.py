@@ -1,8 +1,11 @@
+from pathlib import Path
+
 import cv2 as cv
 
 
+ROOT_DIR = Path(__file__).resolve().parents[2]
 def main() -> None:
-    img: cv.Mat = cv.imread("resources/photos/park.jpg")
+    img: cv.Mat = cv.imread(str(ROOT_DIR / "resources" / "photos" / "park.jpg"))
     gray_img: cv.Mat = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
     hsv_img: cv.Mat = cv.cvtColor(img, cv.COLOR_BGR2HSV)
     lab_img: cv.Mat = cv.cvtColor(img, cv.COLOR_BGR2LAB)
