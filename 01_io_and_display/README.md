@@ -29,6 +29,13 @@
 - `experiment_read_video.md`
 - `experiment_rescale_video.md`
 
+## 建议实现顺序
+
+1. 先用单张图片跑通 `imread` 和 `imshow`
+2. 再用视频文件理解逐帧读取、空帧和退出条件
+3. 然后加入缩放逻辑，比较不同尺寸对显示与速度的影响
+4. 先完成 Python 版本，再用 C++ 复现同样的 I/O 流程
+
 ## 阶段完成标准
 
 你应该能：
