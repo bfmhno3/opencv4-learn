@@ -24,6 +24,13 @@
 - `experiment_thresholding.md`
 - `experiment_contour_detection.md`
 
+## 建议实现顺序
+
+1. 先做 mask 和 bitwise 操作，理解如何限制分析区域
+2. 再做阈值化，观察连续强度如何变成二值前景 / 背景
+3. 然后在二值图或边缘图上提取轮廓
+4. 最后分析前处理变化为什么会直接影响轮廓结果，并用 C++ 复现同样流程
+
 ## 阶段完成标准
 
 你应该能：
